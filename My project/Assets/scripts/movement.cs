@@ -16,12 +16,10 @@ public class movement : MonoBehaviour
     private float horizontal;
     private int jumpCount;
 
-    [SerializeField] private Transform cellingCheck;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundObject;
 
     Rigidbody2D rb;
-    [SerializeField] private Transform alltransform;
 
     private void Awake()
     {
