@@ -6,6 +6,7 @@ public class followPlayer : MonoBehaviour
 { 
     public float stoppingDistance;
     public float speed;
+    public bool atDestination;
     private Transform target;
 
 
@@ -20,7 +21,11 @@ public class followPlayer : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
+            atDestination = false;
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }else
+        {
+            atDestination = true;
         }
     }
 }
