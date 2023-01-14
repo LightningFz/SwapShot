@@ -7,6 +7,7 @@ public class followPlayer : MonoBehaviour
     public float stoppingDistance;
     public float speed;
     public bool atDestination;
+    public petShooting player;
     private Transform target;
 
 
@@ -19,11 +20,19 @@ public class followPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player.canShootPet == false || player.petInPlace == false)
+        {
+            follow();
+        }
+    }
+    void follow()
+    {
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
-            atDestination = false;
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }else
+            atDestination = false;
+        }
+        else
         {
             atDestination = true;
         }

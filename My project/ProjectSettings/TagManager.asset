@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - pet position
+  - pet box
   layers:
   - Default
   - TransparentFX
