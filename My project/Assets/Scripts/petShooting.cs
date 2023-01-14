@@ -8,8 +8,9 @@ public class petShooting : MonoBehaviour
     public Rigidbody2D petRigidbody;
     public bool petInPlace;
     public bool canShootPet = false;
+    public bool petBeingShoot = false;
     public float petRange;
-    private float currentPetRange;
+    public float currentPetRange;
 
     // Update is called once per frame
     void Update()
@@ -35,10 +36,12 @@ public class petShooting : MonoBehaviour
     {
         if (canShootPet == true && petInPlace == true && currentPetRange > 0)
         {
+            petBeingShoot = true;
             petRigidbody.velocity = transform.right * petScript.speed;
             currentPetRange -= Time.deltaTime;
         }else if (currentPetRange <= 0)
         {
+            petBeingShoot = false;
             petRigidbody.velocity = transform.right * 0;
             canShootPet = false;
             currentPetRange = petRange;
