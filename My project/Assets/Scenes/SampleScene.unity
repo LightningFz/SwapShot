@@ -345,6 +345,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: petBox
       objectReference: {fileID: 0}
+    - target: {fileID: 1654723718910112590, guid: cda55e81141af794284f05e9ba7d2ec9, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654723718910112590, guid: cda55e81141af794284f05e9ba7d2ec9, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1654723718910112591, guid: cda55e81141af794284f05e9ba7d2ec9, type: 3}
       propertyPath: m_RootOrder
       value: 9
