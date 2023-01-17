@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6815062224620694560}
   - component: {fileID: 6815062224620694563}
   - component: {fileID: 7368786260478831921}
+  - component: {fileID: 48224813987847264}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -60,3 +61,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinText: {fileID: 0}
   currentCoins: 0
+--- !u!114 &48224813987847264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815062224620694562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef51b9d1b98b3f4db03869c5d3924de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerDuration: 180
+  countDown: 0
+  firstMinute: {fileID: 0}
+  secondMinute: {fileID: 0}
+  separator: {fileID: 0}
+  firstSecond: {fileID: 0}
+  secondSecond: {fileID: 0}
+  flashDuration: 1
