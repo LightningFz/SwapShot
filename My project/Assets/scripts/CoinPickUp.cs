@@ -5,18 +5,16 @@ using UnityEngine;
 public class CoinPickUp : MonoBehaviour
 {
     
-    public int value;
+    public int value = 1;
 
     void OnTriggerEnter2D(Collider2D c2d)
     {
 
         if (c2d.CompareTag("Player"))
         {
-           
-            
-            CoinCounter.instance.IncreaseCoins(value);
             Destroy(gameObject);
-
+            CoinCounter.Instance.IncreaseCoins(value);
         }
+        
     }
 }

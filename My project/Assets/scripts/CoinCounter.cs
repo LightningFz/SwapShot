@@ -6,17 +6,17 @@ using TMPro;
 
 public class CoinCounter : MonoBehaviour
 {
-    public static CoinCounter instance;
+    public static CoinCounter Instance;
 
     public TMP_Text coinText;
     public int currentCoins = 0;
 
-    void awake()
+    public void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
-    void start()
+    public void start()
     {
         coinText.text = "Coins: " + currentCoins.ToString();
     }
