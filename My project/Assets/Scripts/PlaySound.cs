@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
-    public AudioSource source;
+    public AudioSource petShoot;
+    public AudioSource playSound;
+    public AudioSource pauseSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();
+        //ource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class PlaySound : MonoBehaviour
 
     public void Play()
     {
-        source.Play();
+        //source.Play();
     }
+    
 } 
