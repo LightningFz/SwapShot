@@ -11,6 +11,8 @@ public class endOfLevel : MonoBehaviour
         {
             endOflevelMenu.SetActive(true);
             Time.timeScale = 0f;
+            levelMenus.GameIsPaused = true;
+            levelMenus.endOfLevelMenuActive = true;
         }
     }
 }

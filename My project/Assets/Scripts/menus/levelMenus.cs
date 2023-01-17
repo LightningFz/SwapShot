@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class levelMenus : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public static bool endOfLevelMenuActive = false;
 
     public GameObject pauseMenuUI;
 
@@ -14,7 +15,7 @@ public class levelMenus : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused == true)
+            if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
                 Resume();
             }
@@ -32,13 +33,18 @@ public class levelMenus : MonoBehaviour
     }
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
+        if (endOfLevelMenuActive == false)
+        {
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
     }
     public void nextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
     public void HomeScreen()
     {
