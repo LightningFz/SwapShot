@@ -534,6 +534,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 577590821, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855876319}
+    - target: {fileID: 577590821, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 772304543, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855876319}
+    - target: {fileID: 772304543, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108770549, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855876319}
+    - target: {fileID: 1108770549, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403003107, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1855876319}
+    - target: {fileID: 1403003107, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HomeScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4574301134496249540, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_Name
       value: 'Canvas '
@@ -951,6 +983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7339606510026091389, guid: 07984489fe635424a9649af8476e7717, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1654723718910112588, guid: cda55e81141af794284f05e9ba7d2ec9, type: 3}
       propertyPath: m_Name
       value: petBox
@@ -1018,7 +1054,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6195591814299398758, guid: 9c6506c321ad82640ad0cbdec8be932e, type: 3}
       propertyPath: m_Name
-      value: Main Camera (1)
+      value: 'Main Camera '
       objectReference: {fileID: 0}
     - target: {fileID: 6195591814299398810, guid: 9c6506c321ad82640ad0cbdec8be932e, type: 3}
       propertyPath: m_RootOrder
@@ -1256,6 +1292,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: separator
+      value: 
+      objectReference: {fileID: 722087069}
+    - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: firstMinute
+      value: 
+      objectReference: {fileID: 9301416}
+    - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: firstSecond
+      value: 
+      objectReference: {fileID: 728174498}
+    - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: secondMinute
+      value: 
+      objectReference: {fileID: 921664912}
+    - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: secondSecond
+      value: 
+      objectReference: {fileID: 956431033}
     - target: {fileID: 6815062224620694560, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1339,6 +1395,17 @@ MonoBehaviour:
   firstSecond: {fileID: 728174498}
   secondSecond: {fileID: 956431033}
   flashDuration: 1
+--- !u!114 &1855876319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+  m_PrefabInstance: {fileID: 1704575721}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855876312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fe7f08fc22f6f4c938ef1681368d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1929590545 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
