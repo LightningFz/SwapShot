@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7807117352530429335}
   - component: {fileID: 7807117352530429328}
   - component: {fileID: 7807117352530429329}
-  - component: {fileID: 880712097969463833}
   m_Layer: 5
   m_Name: levelSelector
   m_TagString: Untagged
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 880712097969463833}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: levelSelector, Assembly-CSharp
         m_MethodName: openScene
         m_Mode: 1
@@ -135,20 +134,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &880712097969463833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7807117352530429331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ea1b28f402eb045b2f9e3615f5e405, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 0
-  levelText: {fileID: 7807117352947992176}
 --- !u!1 &7807117352947992178
 GameObject:
   m_ObjectHideFlags: 0
