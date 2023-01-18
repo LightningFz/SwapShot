@@ -18,7 +18,7 @@ public class holdPortalButton : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") || collision.CompareTag("pet box"))
+        if(collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
         {
             isButtonOn = true;
             portal.portalOn = true;
@@ -27,7 +27,7 @@ public class holdPortalButton : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("pet box"))
+        if (collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
         {
             isButtonOn = false;
             portal.portalOn = false;
