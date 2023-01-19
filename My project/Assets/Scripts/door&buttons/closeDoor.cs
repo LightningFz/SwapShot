@@ -12,7 +12,7 @@ public class closeDoor : MonoBehaviour
     {
 
         // checks if the object that collided with the trigger has the "Player" or the "Box" tag, if true the switch method is called
-        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("Box"))
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
         {
 
             // checks if the door closed vairable from the door script is false, if false it sets the move door vairable to true
