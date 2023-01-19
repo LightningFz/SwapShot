@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 1152459292}
   m_Layer: 0
   m_Name: pet
-  m_TagString: Untagged
+  m_TagString: pet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,5 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   petShoot: {fileID: 0}
-  playSound: {fileID: 0}
+  audioSource: {fileID: 0}
   pauseSound: {fileID: 0}
+  _isJumping: {fileID: 0}
+  isGrounded: {fileID: 0}

@@ -7,6 +7,7 @@ TagManager:
   - pet position
   - pet box
   - box
+  - pet
   layers:
   - Default
   - TransparentFX
