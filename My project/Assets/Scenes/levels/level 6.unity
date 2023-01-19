@@ -889,30 +889,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8228631626770285706, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631626770285706, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631626770285707, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631626770285717, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: Speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631627278227669, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631627278227669, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.29
-      objectReference: {fileID: 0}
     - target: {fileID: 8228631627874468886, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -960,14 +936,6 @@ PrefabInstance:
     - target: {fileID: 8228631627874468887, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
       propertyPath: m_Name
       value: moving platform
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631628494795633, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228631628494795633, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e05aaa793e603a4bb2a2e2e1d489774, type: 3}
