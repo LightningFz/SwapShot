@@ -16,6 +16,7 @@ public class movement : MonoBehaviour
     public bool isGrounded;
     private float horizontal;
     private int jumpCount;
+    public bool soundFix;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundObject;
@@ -69,10 +70,12 @@ public class movement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             _isJumping = true;
+            soundFix = true;
         }
-        if(_isJumping == true && isGrounded == true)
+        if(_isJumping == true && isGrounded == true && soundFix == true)
         {
             AudioSource.PlayClipAtPoint(jumpSound,transform.position);
+            soundFix = false;
         }
 
     }
@@ -85,6 +88,7 @@ public class movement : MonoBehaviour
             jumpCount--;
         }
         _isJumping = false;
+        soundFix = false;
     }
 
     public void Flip()
