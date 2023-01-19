@@ -6,6 +6,7 @@ public class petShooting : MonoBehaviour
 {
     public followPlayer petScript;
     public Rigidbody2D petRigidbody;
+    public AudioClip petShootSound;
     public bool petInPlace;
     public bool canShootPet = false;
     public bool petBeingShoot = false;
@@ -36,6 +37,11 @@ public class petShooting : MonoBehaviour
     }
     void shootPet()
     {
+        if (canShootPet == true)
+        {
+            AudioSource.PlayClipAtPoint(petShootSound,transform.position);
+        }
+        
         if (canShootPet == true && petInPlace == true && currentPetRange > 0)
         {
             petBeingShoot = true;

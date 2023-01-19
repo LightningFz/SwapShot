@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SuperJump : MonoBehaviour
 {
+    public AudioClip powerUpSound;
     // this method is called when a game object collides with the trigger area 
     void OnTriggerEnter2D(Collider2D player) //paramater that refers to the object that collides with the trigger, in this situation the object is the player
     {
@@ -16,6 +17,7 @@ public class SuperJump : MonoBehaviour
     // this method changes the jump power of the player to 800
     void Pickup(Collider2D player)
     {
+        AudioSource.PlayClipAtPoint(powerUpSound,transform.position);
         // this referring to the movement script of the player
         movement playerJump = player.GetComponent<movement>();
 
