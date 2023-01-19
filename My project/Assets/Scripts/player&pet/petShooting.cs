@@ -16,7 +16,7 @@ public class petShooting : MonoBehaviour
     public Vector3 mousePos;
     public Vector3 screenPos;
     public Vector3 offset;
-    
+    public bool soundFix;
 
     // Update is called once per frame
     void Update()
@@ -38,13 +38,15 @@ public class petShooting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && petInPlace == true)
         {
             canShootPet = true;
+            soundFix = true;
         }
     }
     void shootPet()
     {
-        if (canShootPet == true)
+        if (canShootPet == true && soundFix ==true)
         {
             AudioSource.PlayClipAtPoint(petShootSound,transform.position);
+            soundFix = false;
         }
         
         if (canShootPet == true && petInPlace == true && currentPetRange > 0)
@@ -58,6 +60,7 @@ public class petShooting : MonoBehaviour
             petBeingShoot = false;
             petRigidbody.velocity = petRotation.transform.up * 0;
             canShootPet = false;
+            soundFix = false;
             currentPetRange = petRange;
         }
     }
