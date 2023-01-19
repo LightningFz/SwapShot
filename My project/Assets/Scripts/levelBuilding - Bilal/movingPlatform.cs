@@ -4,32 +4,30 @@ using UnityEngine;
 
 public class movingPlatform : MonoBehaviour
 {
-    //public Rigidbody2D platform;
-    public Transform platform;
-    public bool isMovingVertically;
-    public float speed;
-    public float range = 2f;
-    private float currentRange;
-    private void Start()
+    public Transform posA, posB;
+    public int Speed;
+    public float timer;
+    Vector2 targetPos;
+    // Start is called before the first frame update
+    void Start()
     {
-        currentRange = range;
+        targetPos=posB.position;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        currentRange -= Time.deltaTime;
-        if (isMovingVertically == false && currentRange >= 0)
-        {
-            platform.position = new Vector3(platform.position.x + speed, platform.position.y, platform.position.z);   
-        }else if(isMovingVertically == true && currentRange >= 0)
-        {
-            platform.position = new Vector3(platform.position.x, platform.position.y + speed, platform.position.z);
-        }
-        if (currentRange <= 0)
-        {
-            currentRange = range;
-            speed = speed * -1;
-        }
+        if (Vector2.Distance(transform.position, posA.position) < .1f) Invoke("Action1", timer);
+        if (Vector2.Distance(transform.position, posB.position) < .1f) Invoke("Action2", timer);
+
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, Speed * Time.deltaTime);
+    }
+    public void Action1()
+    {
+        targetPos = posB.position;
+    }
+    public void Action2()
+    {
+        targetPos = posA.position;
     }
 }
