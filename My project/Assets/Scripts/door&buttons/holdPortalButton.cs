@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class holdPortalButton : MonoBehaviour
 {
+
+    // vairables
     public endOfLevel portal;
     public SpriteRenderer button;
     public bool isButtonOn = false;

@@ -4,27 +4,40 @@ using UnityEngine;
 
 public class holdOpenDoor : MonoBehaviour
 {
-    public door door;
+   // vairables
+    public door door; // references the door script
+
     // Start is called before the first frame update
     void Start()
     {
-        door.doorClosed = true;
+        door.doorClosed = true; // sets the doorClosed vairable to true when the game starts
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    // this method is called when a game object collides with the trigger area 
+    private void OnTriggerEnter2D(Collider2D gameObjects) //paramater that refers to the object that collides with the trigger, in this situation the objects can be either the player or the box
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
+
+        // checks if the object that collided with the trigger has the "Player" or the "Box" tag
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
         {
+
+            // checks the doorClosed vairable, if the vairable is set to true it sets the moveDoor vairable to true
             if (door.doorClosed == true)
             {
                 door.moveDoor = true;
             }
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+    // this method is called when a game object collides with the trigger area 
+    private void OnTriggerExit2D(Collider2D gameObjects) //paramater that refers to the object that collides with the trigger, in this situation the objects can be either the player or the box
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
+         // checks if the object that collided with the trigger has the "Player" or the "Box" tag
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
         {
+
+            // checks the doorClosed vairable, if the vairable is set to false it sets the moveDoor vairable to true
             if (door.doorClosed == false)
             {
                 door.moveDoor = true;
