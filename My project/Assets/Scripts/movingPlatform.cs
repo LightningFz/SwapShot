@@ -10,10 +10,12 @@ public class movingPlatform : MonoBehaviour
     public float speed;
     public float range = 2f;
     private float currentRange;
-
+    public bool objectonplatform;
+    public GameObject myPlayer;
     private void Start()
     {
         currentRange = range;
+        objectonplatform = true;
     }
 
     // Update is called once per frame
@@ -31,6 +33,29 @@ public class movingPlatform : MonoBehaviour
         {
             currentRange = range;
             speed = speed * -1;
+        }
+
+        if(objectonplatform)
+        {
+            myPlayer.transform.SetParent(null);
+        }
+        else
+        {
+            myPlayer.transform.SetParent(this.transform);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            objectonplatform = false;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            objectonplatform = true;
         }
     }
 }
