@@ -658,10 +658,6 @@ PrefabInstance:
       propertyPath: petRigidbody
       value: 
       objectReference: {fileID: 901894920}
-    - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
-      propertyPath: petShootSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 52ea197733631344d8b98ff30d656cb1, type: 3}
     - target: {fileID: 3973984709687099384, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -706,10 +702,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3973984709687099386, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: d320b4d2298893e468bcc34946c6a635, type: 3}
     - target: {fileID: 3973984709687099387, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: m_Name
       value: player

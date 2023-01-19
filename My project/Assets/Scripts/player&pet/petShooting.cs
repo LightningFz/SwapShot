@@ -35,7 +35,7 @@ public class petShooting : MonoBehaviour
     }
     void getInput()
     {
-        if (Input.GetKeyDown(KeyCode.E) && petInPlace == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && petInPlace == true)
         {
             canShootPet = true;
             soundFix = true;
