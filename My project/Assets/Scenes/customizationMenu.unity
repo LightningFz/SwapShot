@@ -3570,7 +3570,17 @@ MonoBehaviour:
   - m_Handle: 0
   - m_Handle: 0
   - m_Handle: 0
-  pet: []
+  pet:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1242613531
 MonoBehaviour:
   m_ObjectHideFlags: 0
