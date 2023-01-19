@@ -7,6 +7,7 @@ public class petShooting : MonoBehaviour
     public followPlayer petScript;
     public Rigidbody2D petRigidbody;
     public AudioClip petShootSound;
+    public Transform petPosition;
     public bool petInPlace;
     public bool canShootPet = false;
     public bool petBeingShoot = false;
@@ -25,6 +26,7 @@ public class petShooting : MonoBehaviour
         {
             petInPlace = false;
         }
+        getRotate();
         getInput();
         shootPet();
 
@@ -48,16 +50,29 @@ public class petShooting : MonoBehaviour
         if (canShootPet == true && petInPlace == true && currentPetRange > 0)
         {
             petBeingShoot = true;
-            petRigidbody.velocity = transform.right * petScript.speed;
+            petRigidbody.velocity = petPosition.transform.up * petScript.speed;
             currentPetRange -= Time.deltaTime;
             
         }else if (currentPetRange <= 0)
         {
             petBeingShoot = false;
-            petRigidbody.velocity = transform.right * 0;
+            petRigidbody.velocity = petPosition.transform.up * 0;
             canShootPet = false;
             soundFix = false;
             currentPetRange = petRange;
+        }
+    }
+
+    void getRotate()
+    {
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            mousePos = Input.mousePosition;                                             //get mouse position                                     
+            screenPos = Camera.main.WorldToScreenPoint(transform.position);             //Get object position and put it "on the screen" (same as mouse)                
+            offset = new Vector3(mousePos.x - screenPos.x , mousePos.y - screenPos.y );   //Check where the mouse is relative to the object 
+
+            float angle = Mathf.Atan2(offset.x, offset.y) * Mathf.Rad2Deg;                      //Turn that into an angle and convert to degrees
+            petRotation.rotation = Quaternion.AngleAxis(angle, Vector3.back);  
         }
     }
 }

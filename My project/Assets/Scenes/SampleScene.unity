@@ -134,6 +134,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &290639492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3973984708676582965, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+  m_PrefabInstance: {fileID: 3973984710250756971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &290639493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3973984708676582964, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+  m_PrefabInstance: {fileID: 3973984710250756971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &290639494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290639492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb5be77b204fb44c9003c96539e3094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mousePos: {x: 0, y: 0, z: 0}
+  petRotation: {fileID: 290639493}
+  screenPos: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &348045719 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3658110124330579749, guid: 07984489fe635424a9649af8476e7717, type: 3}
@@ -765,6 +791,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1583389906}
     - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+      propertyPath: petPosition
+      value: 
+      objectReference: {fileID: 290639493}
+    - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: petRigidbody
       value: 
       objectReference: {fileID: 1583389904}
@@ -772,6 +802,13 @@ PrefabInstance:
       propertyPath: petShootSound
       value: 
       objectReference: {fileID: 8300000, guid: 52ea197733631344d8b98ff30d656cb1, type: 3}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 3973984708676582965, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+      propertyPath: m_Name
+      value: 'petPosition '
+      objectReference: {fileID: 0}
+>>>>>>> cc8d4cddb0a31242ba261c1642b7b4b40f885aae
     - target: {fileID: 3973984709687099384, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1025,11 +1062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1188135004358214841, guid: 05538361a80300448a7bcc98d91c2622, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.5
+      value: 11.05
       objectReference: {fileID: 0}
     - target: {fileID: 1188135004358214841, guid: 05538361a80300448a7bcc98d91c2622, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1188135004358214841, guid: 05538361a80300448a7bcc98d91c2622, type: 3}
       propertyPath: m_LocalPosition.z
