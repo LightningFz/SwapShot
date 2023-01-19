@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class doubleJump : MonoBehaviour
 {
+    public AudioClip powerUpSound;
     // this method is called when a game object collides with the trigger area 
     void OnTriggerEnter2D(Collider2D player) //paramater that refers to the object that collides with the trigger, in this situation the object is the player
     {
@@ -17,6 +18,7 @@ public class doubleJump : MonoBehaviour
     // this method changes the maxium amount of jumps a player can make to two
     void Pickup(Collider2D player)
     {
+        AudioSource.PlayClipAtPoint(powerUpSound,transform.position);
         // this referring to the movement script of the player
         movement playerJump = player.GetComponent<movement>(); 
 

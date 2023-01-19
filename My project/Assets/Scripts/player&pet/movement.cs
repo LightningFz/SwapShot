@@ -12,7 +12,7 @@ public class movement : MonoBehaviour
 
     public bool isFacingLeft = true;
     public bool _isJumping = false;
-    public AudioSource jumpSound;
+    public AudioClip jumpSound;
     public bool isGrounded;
     private float horizontal;
     private int jumpCount;
@@ -29,7 +29,6 @@ public class movement : MonoBehaviour
     private void Start()
     {
         jumpCount = maxJumps;
-        jumpSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -73,7 +72,7 @@ public class movement : MonoBehaviour
         }
         if(_isJumping == true && isGrounded == true)
         {
-            jumpSound.Play();
+            AudioSource.PlayClipAtPoint(jumpSound,transform.position);
         }
 
     }

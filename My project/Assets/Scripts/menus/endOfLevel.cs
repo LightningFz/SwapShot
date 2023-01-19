@@ -10,10 +10,12 @@ public class endOfLevel : MonoBehaviour
     public bool portalOn = true;
     public Color on;
     public Color off;
+    public AudioClip levelEnd;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && portalOn == true)
         {
+            AudioSource.PlayClipAtPoint(levelEnd,transform.position);
             endOflevelMenu.SetActive(true);
             Time.timeScale = 0f;
             levelMenus.GameIsPaused = true;

@@ -8,6 +8,7 @@ public class holdPortalButton : MonoBehaviour
     // vairables
     public endOfLevel portal;
     public SpriteRenderer button;
+    public AudioClip portalButtonPress;
     public bool isButtonOn = false;
     public Color on;
     public Color off;
@@ -22,6 +23,7 @@ public class holdPortalButton : MonoBehaviour
     {
         if(collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
         {
+            AudioSource.PlayClipAtPoint(portalButtonPress,transform.position);
             isButtonOn = true;
             portal.portalOn = true;
             button.color = on;
@@ -31,6 +33,7 @@ public class holdPortalButton : MonoBehaviour
     {
         if (collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box"))
         {
+            AudioSource.PlayClipAtPoint(portalButtonPress,transform.position);
             isButtonOn = false;
             portal.portalOn = false;
             button.color = off;
