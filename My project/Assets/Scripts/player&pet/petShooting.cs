@@ -7,14 +7,13 @@ public class petShooting : MonoBehaviour
     public followPlayer petScript;
     public Rigidbody2D petRigidbody;
     public AudioClip petShootSound;
-    public Transform petPosition;
+    public Transform petRotation;
     public bool petInPlace;
     public bool canShootPet = false;
     public bool petBeingShoot = false;
     public float petRange;
     public float currentPetRange;
     public Vector3 mousePos;
-    public Transform petRotation;
     public Vector3 screenPos;
     public Vector3 offset;
     
@@ -51,13 +50,13 @@ public class petShooting : MonoBehaviour
         if (canShootPet == true && petInPlace == true && currentPetRange > 0)
         {
             petBeingShoot = true;
-            petRigidbody.velocity = petPosition.transform.up * petScript.speed;
+            petRigidbody.velocity = petRotation.transform.up * petScript.speed;
             currentPetRange -= Time.deltaTime;
             
         }else if (currentPetRange <= 0)
         {
             petBeingShoot = false;
-            petRigidbody.velocity = petPosition.transform.up * 0;
+            petRigidbody.velocity = petRotation.transform.up * 0;
             canShootPet = false;
             currentPetRange = petRange;
         }

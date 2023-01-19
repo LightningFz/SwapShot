@@ -278,6 +278,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9121937680999812888, guid: 07984489fe635424a9649af8476e7717, type: 3}
   m_PrefabInstance: {fileID: 403458212}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &98761567 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3973984708676582964, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+  m_PrefabInstance: {fileID: 2033311418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &136896106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2192,6 +2197,10 @@ PrefabInstance:
       propertyPath: petScript
       value: 
       objectReference: {fileID: 890159443}
+    - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+      propertyPath: petPosition
+      value: 
+      objectReference: {fileID: 98761567}
     - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: petRigidbody
       value: 
