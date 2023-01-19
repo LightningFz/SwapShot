@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-
+using System.Linq;
 
 public class CustomizationMenu : MonoBehaviour
 {
@@ -20,13 +20,19 @@ public class CustomizationMenu : MonoBehaviour
 
     private GameObject lvl;
     private SpriteRenderer petImage;
+    //public List<GameObject> root;
 
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; sceneBuildIndexList.Length > i; i++)
         {
+            Debug.Log(scene[i]);
             scene[i] = SceneManager.GetSceneByBuildIndex(sceneBuildIndexList[i]);
+            //scene[i].GetRootGameObjects();
+            Debug.Log(SceneManager.GetSceneByBuildIndex(1));
+            Debug.Log(i);
+            Debug.Log(lvl);
         }
         //petImage = pet[].GetComponentInChildren<SpriteRenderer>();
         for (int i = 0; buttons.Length > i ;i++)

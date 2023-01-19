@@ -3558,8 +3558,19 @@ MonoBehaviour:
   - {fileID: 859587647}
   - {fileID: 1920140587}
   - {fileID: 159409014}
-  sceneBuildIndexList: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  pet: {fileID: 3622746179333542687, guid: 8aeeb55704627044a8c82d4f2ae0cdec, type: 3}
+  sceneBuildIndexList: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
+  scene:
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  - m_Handle: 0
+  pet: []
 --- !u!114 &1242613531
 MonoBehaviour:
   m_ObjectHideFlags: 0
