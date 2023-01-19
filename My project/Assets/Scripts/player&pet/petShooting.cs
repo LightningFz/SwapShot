@@ -11,7 +11,6 @@ public class petShooting : MonoBehaviour
     public bool petBeingShoot = false;
     public float petRange;
     public float currentPetRange;
-
     
 
     // Update is called once per frame

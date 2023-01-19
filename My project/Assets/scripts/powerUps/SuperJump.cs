@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class doubleJump : MonoBehaviour
+public class SuperJump : MonoBehaviour
 {
     // this method is called when a game object collides with the trigger area 
     void OnTriggerEnter2D(Collider2D player) //paramater that refers to the object that collides with the trigger, in this situation the object is the player
@@ -10,18 +10,17 @@ public class doubleJump : MonoBehaviour
         // checks if the object that collided with the trigger has the "Player" tag, if true the pickup method is called
         if (player.CompareTag("Player"))
         {
-            Pickup(player); // we are passing the refernce of the player to the pick up method  
+            Pickup(player); // we are passing the refernce of the player to the pick up method 
         }
     }
-
-    // this method changes the maxium amount of jumps a player can make to two
+    // this method changes the jump power of the player to 800
     void Pickup(Collider2D player)
     {
         // this referring to the movement script of the player
-        movement playerJump = player.GetComponent<movement>(); 
+        movement playerJump = player.GetComponent<movement>();
 
-        // this sets the max jumps viarable in the movement script to 2 instead of 1
-        playerJump.maxJumps = 2;
+        // this sets the jump power viarable in the movement script to 800
+        playerJump.jumpPower = 800f;
 
         // this removes the powerup game object from the scene
         Destroy(gameObject);

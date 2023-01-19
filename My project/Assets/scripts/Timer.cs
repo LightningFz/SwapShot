@@ -32,6 +32,7 @@ public class Timer : MonoBehaviour {
         ResetTimer();
     }
 
+    //resets timer every level
     private void ResetTimer() {
         if (countDown) {
             timer = timerDuration;
@@ -41,6 +42,7 @@ public class Timer : MonoBehaviour {
         SetTextDisplay(true);
     }
 
+    //checks if the time limit is over, if the time limit is over it starts flashing
     void Update() {
         if (countDown && timer > 0) {
             timer -= Time.deltaTime;
@@ -53,17 +55,20 @@ public class Timer : MonoBehaviour {
         }
     }
 
+    // updates the display
     private void UpdateTimerDisplay(float time) {
         if (time < 0) {
             time = 0;
         }
 
+        // the max time u can put for the timer
         if (time > 3660) {
             Debug.LogError("Timer cannot display values above 3660 seconds");
             ErrorDisplay();
             return;
         }
 
+        //this is for the display
         float minutes = Mathf.FloorToInt(time / 60);
         float seconds = Mathf.FloorToInt(time % 60);
 
@@ -88,6 +93,7 @@ public class Timer : MonoBehaviour {
         //timerText.text = "ERROR";
     }
 
+    //this is what causes the flashing when the timer is over and also sets the speed of the flashing
     private void FlashTimer() {
         if(countDown && timer != 0) {
             timer = 0;
