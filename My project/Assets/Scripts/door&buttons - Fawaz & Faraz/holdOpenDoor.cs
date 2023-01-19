@@ -19,7 +19,7 @@ public class holdOpenDoor : MonoBehaviour
     {
 
         // checks if the object that collided with the trigger has the "Player" or the "Box" tag
-        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box")||gameObjects.CompareTag("pet box"))
         {
 
             // checks the doorClosed vairable, if the vairable is set to true it sets the moveDoor vairable to true
@@ -34,7 +34,7 @@ public class holdOpenDoor : MonoBehaviour
     private void OnTriggerExit2D(Collider2D gameObjects) //paramater that refers to the object that collides with the trigger, in this situation the objects can be either the player or the box
     {
          // checks if the object that collided with the trigger has the "Player" or the "Box" tag
-        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box") || gameObjects.CompareTag("pet box"))
         {
 
             // checks the doorClosed vairable, if the vairable is set to false it sets the moveDoor vairable to true

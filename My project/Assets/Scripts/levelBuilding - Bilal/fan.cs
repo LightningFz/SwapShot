@@ -18,7 +18,7 @@ public class fan : MonoBehaviour
                 other.GetComponent<Rigidbody2D>().AddForce(Vector2.right * fanPower * direction);
             }
         }
-        if (other.CompareTag("Box"))
+        if (other.CompareTag("box"))
         {
             if (fanOn == true)
             {

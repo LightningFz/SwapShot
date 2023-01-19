@@ -138,6 +138,10 @@ MonoBehaviour:
   checkRadius: 0
   maxJumps: 1
   isFacingLeft: 1
+  _isJumping: 0
+  jumpSound: {fileID: 8300000, guid: d320b4d2298893e468bcc34946c6a635, type: 3}
+  isGrounded: 0
+  soundFix: 0
   groundCheck: {fileID: 3973984709632911216}
   groundObject:
     serializedVersion: 2
@@ -172,11 +176,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petScript: {fileID: 0}
   petRigidbody: {fileID: 0}
+  petShootSound: {fileID: 8300000, guid: 52ea197733631344d8b98ff30d656cb1, type: 3}
+  petRotation: {fileID: 3973984708676582964}
   petInPlace: 0
   canShootPet: 0
   petBeingShoot: 0
   petRange: 2
   currentPetRange: 0
+  mousePos: {x: 0, y: 0, z: 0}
+  screenPos: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  soundFix: 0
 --- !u!1 &3973984710139090464
 GameObject:
   m_ObjectHideFlags: 0

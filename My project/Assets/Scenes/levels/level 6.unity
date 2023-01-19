@@ -396,6 +396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f39a40467f11b748829e1896ad7fdc5, type: 3}
+--- !u!4 &249274943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3973984708676582964, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+  m_PrefabInstance: {fileID: 2033311418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &321240145 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1855639703725145041, guid: 07984489fe635424a9649af8476e7717, type: 3}
@@ -2229,6 +2234,10 @@ PrefabInstance:
       propertyPath: petScript
       value: 
       objectReference: {fileID: 890159443}
+    - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
+      propertyPath: petRotation
+      value: 
+      objectReference: {fileID: 249274943}
     - target: {fileID: 653247637, guid: 0e2e8774ee18f9847873e37bc4297842, type: 3}
       propertyPath: petRigidbody
       value: 
