@@ -766,9 +766,17 @@ PrefabInstance:
       value: gameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: pauseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8e395d0e6d20ab84f8f70219fbf4b533, type: 3}
+    - target: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1999591862}
+    - target: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: unpauseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f06ddbf43a0528a4bba144dbef0908f2, type: 3}
     - target: {fileID: 7368786260478831921, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: coinText
       value: 
