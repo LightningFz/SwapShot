@@ -11,8 +11,9 @@ public class movement : MonoBehaviour
 
 
     public bool isFacingLeft = true;
-    private bool _isJumping = false;
-    private bool isGrounded;
+    public bool _isJumping = false;
+    public AudioSource jumpSound;
+    public bool isGrounded;
     private float horizontal;
     private int jumpCount;
 
@@ -28,6 +29,7 @@ public class movement : MonoBehaviour
     private void Start()
     {
         jumpCount = maxJumps;
+        jumpSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -42,7 +44,7 @@ public class movement : MonoBehaviour
         move();
     }
 
-    private void Grounded()
+    public void Grounded()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObject);
         if (isGrounded)
@@ -62,12 +64,16 @@ public class movement : MonoBehaviour
             Flip();
         }
     }
-    private void getInput()
+    public void getInput()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump"))
         {
             _isJumping = true;
+        }
+        if(_isJumping == true && isGrounded == true)
+        {
+            jumpSound.Play();
         }
 
     }
