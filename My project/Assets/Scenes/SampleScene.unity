@@ -1533,10 +1533,6 @@ PrefabInstance:
       propertyPath: secondSecond
       value: 
       objectReference: {fileID: 1329088469}
-    - target: {fileID: 1834529062970061730, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 1888195890}
     - target: {fileID: 6815062224620694560, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1585,7 +1581,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: gameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+    - target: {fileID: 6815062225006894020, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1888195890}
@@ -1593,20 +1589,17 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 82121461}
-    m_RemovedComponents:
-    - {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
-    - {fileID: 1834529062970061730, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
 --- !u!1 &6815062225006894015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815062224620694562, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
   m_PrefabInstance: {fileID: 6815062225006894014}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6815062225006894020
+--- !u!114 &6815062225006894020 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6815062225006894020, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+  m_PrefabInstance: {fileID: 6815062225006894014}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6815062225006894015}
   m_Enabled: 1
@@ -1614,7 +1607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af865275fb45fe1418356e2e127bfb44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1888195890}
 --- !u!1001 &7601408335645004054
 PrefabInstance:
   m_ObjectHideFlags: 0
