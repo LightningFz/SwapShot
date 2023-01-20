@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cameraFollowingPlayer : MonoBehaviour
 {
-
+    // Variables for the Camera 
     public Transform player;
     public float offsetOnX = 0f;
     public float offsetOnY = 5f;
@@ -12,6 +12,6 @@ public class cameraFollowingPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(player.position.x + offsetOnX, player.position.y + offsetOnY, this.transform.position.z);
+        this.transform.position = new Vector3(player.position.x + offsetOnX, player.position.y + offsetOnY, this.transform.position.z); // the camera will follow the player on both the x axis and y axis with a small offset while staying on the z axis 
     }
 }
