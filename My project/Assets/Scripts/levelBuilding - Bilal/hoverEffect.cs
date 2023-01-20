@@ -19,8 +19,8 @@ public class hoverEffect : MonoBehaviour
 
     private void FixedUpdate()
     {
-        currentPosition = startPosition;
-        currentPosition.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-        transform.position = currentPosition;
+        currentPosition = startPosition; // sets the "CurrentPosition" to "startPosition"
+        currentPosition.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude; // Sets the y axis of the variable "currentPosition" to radians 
+        transform.position = currentPosition; // sets the position of the effect to the variable "currentPosition" 
     }
 }
