@@ -25,6 +25,7 @@ public class menuButtons : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("fgh");
             if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
                 resumeGame(); 
