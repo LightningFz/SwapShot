@@ -18,7 +18,7 @@ public class holdOpenDoor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D gameObjects) //paramater that refers to the object that collides with the trigger, in this situation the objects can be either the player or the box
     {
 
-        // checks if the object that collided with the trigger has the "Player" or the "Box" tag
+        // checks if the object that collided with the trigger has the "Player", "box", or "pet box" tags
         if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box")||gameObjects.CompareTag("pet box"))
         {
 
