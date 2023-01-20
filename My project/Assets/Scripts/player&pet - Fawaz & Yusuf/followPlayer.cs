@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class followPlayer : MonoBehaviour
 {
+    //made by yusuf
+
     //variables
     public float stoppingDistance;
     public float speed;

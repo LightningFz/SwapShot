@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuperJump : MonoBehaviour
+public class superJump : MonoBehaviour
 {
     public AudioClip powerUpSound;
     // this method is called when a game object collides with the trigger area 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class petShooting : MonoBehaviour
 {
+    //made by Fawaz
+
+    //variables
     public followPlayer petScript;
     public Rigidbody2D petRigidbody;
     public AudioClip petShootSound;
@@ -21,6 +24,7 @@ public class petShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //checking if the pet is in position or not 
         if(petScript.atDestination == true)
         {
             petInPlace = true;
@@ -33,6 +37,8 @@ public class petShooting : MonoBehaviour
         shootPet();
 
     }
+
+    //get all player inputs and checking if he inputed left mouse click
     void getInput()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && petInPlace == true)
@@ -41,14 +47,16 @@ public class petShooting : MonoBehaviour
             soundFix = true;
         }
     }
+    //shoot pet by adding velocity to it 
     void shootPet()
     {
         if (canShootPet == true && soundFix ==true)
         {
-            AudioSource.PlayClipAtPoint(petShootSound,transform.position);
+            AudioSource.PlayClipAtPoint(petShootSound,transform.position);// play sound effects
             soundFix = false;
         }
         
+        //check if you can shoot the pet or not
         if (canShootPet == true && petInPlace == true && currentPetRange > 0) 
         {
             petBeingShoot = true;
@@ -65,6 +73,7 @@ public class petShooting : MonoBehaviour
         }
     }
 
+    //rotate the "pet position" as the mouses move to make the pet move towards the mouse
     void getRotate()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
