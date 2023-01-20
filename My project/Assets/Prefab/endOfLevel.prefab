@@ -149,6 +149,7 @@ MonoBehaviour:
   endOflevelMenu: {fileID: 0}
   portal: {fileID: 5160681053226164561}
   hoverEffect: {fileID: 5160681053226164566}
-  portalOn: 0
+  portalOn: 1
   on: {r: 1, g: 0.664359, b: 0.05345905, a: 1}
   off: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
+  levelEnd: {fileID: 8300000, guid: a152506eb59062e48814f9e59288cf21, type: 3}
