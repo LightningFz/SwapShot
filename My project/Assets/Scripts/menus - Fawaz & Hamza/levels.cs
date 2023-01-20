@@ -17,7 +17,7 @@ public class levels : MonoBehaviour
 
     //These variables are used to number the levels. Please keep in mind that the index of the levels has been set from the unity "Build Settings..."
     private int numberOfLevelIndex;
-    private int numberOfLevel;
+    private int numberOfLevel = 1;
     // Start is called before the first frame update
     void Start()
     {
