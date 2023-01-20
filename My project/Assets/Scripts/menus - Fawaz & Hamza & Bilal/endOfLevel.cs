@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class endOfLevel : MonoBehaviour
 {
+    //variables 
     public GameObject endOflevelMenu;
     public SpriteRenderer portal;
     public hoverEffect hoverEffect;
@@ -11,11 +12,11 @@ public class endOfLevel : MonoBehaviour
     public Color on;
     public Color off;
     public AudioClip levelEnd;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) // Makes a Collider
     {
-        if (collision.CompareTag("Player") && portalOn == true)
+        if (collision.CompareTag("Player") && portalOn == true) //checks if the player enters the Collider and "portalOn" is true 
         {
-            AudioSource.PlayClipAtPoint(levelEnd,transform.position);
+            AudioSource.PlayClipAtPoint(levelEnd,transform.position); //plays a sound effect at the position of the portal 
             endOflevelMenu.SetActive(true);
             Time.timeScale = 0f;
             levelMenus.GameIsPaused = true;
@@ -24,7 +25,7 @@ public class endOfLevel : MonoBehaviour
     }
     private void Update()
     {
-        if (portalOn == false)
+        if (portalOn == false) 
         {
             hoverEffect.amplitude = 0;
             portal.color = off;
