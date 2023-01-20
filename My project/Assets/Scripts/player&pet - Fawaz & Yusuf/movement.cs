@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    //made by fawaz
+
+
+    //variables
     public float runSpeed = 40;
     public float jumpPower = 5;
     public float checkRadius;
     public int maxJumps = 1;
-
-
     public bool isFacingLeft = true;
     public bool _isJumping = false;
     public AudioClip jumpSound;
@@ -18,32 +20,40 @@ public class movement : MonoBehaviour
     private int jumpCount;
     public bool soundFix;
 
+
+    //[SerializeField] means that it appears in the inspector 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundObject;
 
     Rigidbody2D rb;
 
+    //called before the game starts
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
+    //called on the first frame
     private void Start()
     {
         jumpCount = maxJumps;
     }
 
+    //called every frame
     void Update()
     {
         faceRight();
         getInput();
     }
 
+    //called at a fixed rate
     private void FixedUpdate()
     {
         Grounded();
         move();
     }
 
+    //check if the player is touching the ground or not
     public void Grounded()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObject);
@@ -53,17 +63,19 @@ public class movement : MonoBehaviour
         }
     }
 
+    //check whether the player is facing the right direction or not   
     public void faceRight()
     {
         if (horizontal < 0 && isFacingLeft)
         {
-            Flip();
+            flip();
         }
         else if (horizontal > 0 && !isFacingLeft)
         {
-            Flip();
+            flip();
         }
     }
+    //get the player inputs 
     public void getInput()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -79,6 +91,7 @@ public class movement : MonoBehaviour
         }
 
     }
+    //apply forces to mave the player move 
     private void move()
     {
         rb.velocity = new Vector2(horizontal * runSpeed, rb.velocity.y);
@@ -91,7 +104,8 @@ public class movement : MonoBehaviour
         soundFix = false;
     }
 
-    public void Flip()
+    //flip the player on the y axis
+    public void flip()
     {
         isFacingLeft = !isFacingLeft;
         transform.Rotate(0f, 180, 0f);

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class followPlayer : MonoBehaviour
-{ 
+{
+    //variables
     public float stoppingDistance;
     public float speed;
     public bool atDestination;
@@ -14,17 +15,18 @@ public class followPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("pet position").GetComponent<Transform>();
+        target = GameObject.FindGameObjectWithTag("pet position").GetComponent<Transform>(); // find the target gameobject
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.canShootPet == false || player.petInPlace == false)
+        if (player.canShootPet == false || player.petInPlace == false) //check if it should go back to it's resting position or not
         {
             follow();
         }
     }
+    //folllow the gameobject that was found in the start method and has been saved in the target variable
     void follow()
     {
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
