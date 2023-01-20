@@ -1,3 +1,5 @@
+// made by Fawaz
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class menuButtons : MonoBehaviour
 {
-    //This script has been made by Fawaz
 
     //variables that can be accessed from anywhere in the game
     public static bool GameIsPaused = false;

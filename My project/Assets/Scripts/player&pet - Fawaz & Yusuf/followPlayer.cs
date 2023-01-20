@@ -1,10 +1,11 @@
+//made by Yusuf
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class followPlayer : MonoBehaviour
 {
-    //made by yusuf
 
     //variables
     public float stoppingDistance;

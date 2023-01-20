@@ -1,10 +1,11 @@
+// made by Bilal
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class backgroundColor : MonoBehaviour
 {
-    // made by bilal
 
     //variables
     public Camera Camera;

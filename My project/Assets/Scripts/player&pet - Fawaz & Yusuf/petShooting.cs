@@ -1,10 +1,11 @@
+//made by Fawaz
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class petShooting : MonoBehaviour
 {
-    //made by Fawaz
 
     //variables
     public followPlayer petScript;

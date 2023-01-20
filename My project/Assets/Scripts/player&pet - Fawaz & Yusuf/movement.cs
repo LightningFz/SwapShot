@@ -1,10 +1,11 @@
+//made by Fawaz
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    //made by fawaz
 
 
     //variables

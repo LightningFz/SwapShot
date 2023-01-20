@@ -1,10 +1,12 @@
+// made by Fawaz
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class endOfLevel : MonoBehaviour
 {
-    //This script has been made by Hamza
 
     //variables 
     public GameObject endOflevelMenu; //the end of the level menu

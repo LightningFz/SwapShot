@@ -1,3 +1,5 @@
+// made by Hamza
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +8,6 @@ using TMPro;
 
 public class levels : MonoBehaviour
 {
-    //This script has been made by Fawaz
 
     //array of all the levels
     public GameObject[] level;

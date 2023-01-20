@@ -1,10 +1,11 @@
+//made by Yusuf
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class VolumeSlider : MonoBehaviour
 {
-    // made by yusuf 
 
     public AudioSource AudioSource;
 

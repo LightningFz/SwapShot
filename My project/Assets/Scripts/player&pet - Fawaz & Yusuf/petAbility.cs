@@ -1,11 +1,12 @@
+//made by Yusuf
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class petAbility : MonoBehaviour
 {
-    //made by yusuf
-
+    
     //variables
     public petShooting pet;
     public Transform player;
