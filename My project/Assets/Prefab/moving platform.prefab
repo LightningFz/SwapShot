@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71b7a8d8e0790b409dea478d80145f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posA: {fileID: 8228631628494795633}
-  posB: {fileID: 8228631627278227669}
-  Speed: 5
+  startPosition: {fileID: 0}
+  endPosition: {fileID: 0}
+  speed: 0
   timer: 0
 --- !u!61 &8228631626770285718
 BoxCollider2D:

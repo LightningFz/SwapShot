@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7398627677853236474}
   - component: {fileID: 7398627677853236473}
   - component: {fileID: 7398627677853236454}
+  - component: {fileID: 2733844928625400936}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -133,3 +134,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCollect: {fileID: 8300000, guid: cfd149dffe32a6d42bc7a284380a2c2f, type: 3}
   value: 1
+--- !u!114 &2733844928625400936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398627677853236476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de18722160f7e0f40b40c452bbb2d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 7398627677853236475}
+  color:
+  - {r: 1, g: 0.68030846, b: 0.21960783, a: 1}
+  - {r: 0.754717, g: 0.5965452, b: 0.004746554, a: 1}
+  - {r: 0.9150943, g: 0.63050234, b: 0.19568045, a: 1}
+  - {r: 0.9245283, g: 0.67932, b: 0, a: 1}
+  - {r: 0.8039216, g: 0.73937225, b: 0, a: 1}
+  defaultColor: {r: 1, g: 0.7137255, b: 0, a: 1}
+  changePlayerColor: 1

@@ -1,4 +1,4 @@
-//made by Hamza
+//made by Faraz
 
 using System.Collections;
 using System.Collections.Generic;
