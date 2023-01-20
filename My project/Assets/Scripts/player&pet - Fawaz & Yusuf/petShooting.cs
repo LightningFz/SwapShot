@@ -49,13 +49,13 @@ public class petShooting : MonoBehaviour
             soundFix = false;
         }
         
-        if (canShootPet == true && petInPlace == true && currentPetRange > 0)
+        if (canShootPet == true && petInPlace == true && currentPetRange > 0) 
         {
             petBeingShoot = true;
             petRigidbody.velocity = petRotation.transform.up * petScript.speed;
             currentPetRange -= Time.deltaTime;
             
-        }else if (currentPetRange <= 0)
+        }else if (currentPetRange <= 0) //reseting values after timer hits 0
         {
             petBeingShoot = false;
             petRigidbody.velocity = petRotation.transform.up * 0;
