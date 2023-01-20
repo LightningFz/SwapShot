@@ -13,7 +13,7 @@ public class fanButton : MonoBehaviour
     {
 
         // checks if the object that collided with the trigger has the "Player" or the "Box" tag, if true the switch method is called
-        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("Box"))
+        if (gameObjects.CompareTag("Player")|| gameObjects.CompareTag("box"))
         {
             Switch();
         }
