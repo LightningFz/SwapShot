@@ -5,23 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class startMenu : MonoBehaviour
 {
+    //This script has been made by Fawaz
+
+    //variable
     public int numberOfLevels = 3;
-    public void playGame()
+
+    //load first level
+    public void loadFirstLevel()
     {
         SceneManager.LoadScene(1);
     }
-    public void levelsMenu()
+    //Load levels menu
+    public void loadLevelsMenu()
     {
         SceneManager.LoadScene(numberOfLevels + 1);
     }
-    public void settings()
+    //load settings menu
+    public void loadSettingsMenu()
     {
         SceneManager.LoadScene(numberOfLevels + 2);
     }
-    public void credits()
+    //load credits menu
+    public void loaCreditsMenu()
     {
         SceneManager.LoadScene(numberOfLevels + 3);
     }
+    //quit the game
     public void quitGame()
     {
         Debug.Log("Quit game....");
