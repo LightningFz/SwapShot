@@ -13,12 +13,12 @@ public class CoinCounter : MonoBehaviour
 
     public void Awake()
     {
-        Instance = this;
+        Instance = this; // puts the texts on the screen 
     }
 
     public void start()
     {
-        coinText.text = "Coins: " + currentCoins.ToString();
+        coinText.text = "Coins: " + currentCoins.ToString(); // adds the text "coin" 
     }
 
     public void IncreaseCoins(int v)

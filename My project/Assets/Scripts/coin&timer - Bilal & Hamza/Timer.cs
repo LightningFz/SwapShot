@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 
 public class Timer : MonoBehaviour {
+    //NOTE: This script needs some knowledge about unity and C# to be understood 
+
     [SerializeField]
     private float timerDuration = 3f * 60f; //Duration of the timer in seconds
 
