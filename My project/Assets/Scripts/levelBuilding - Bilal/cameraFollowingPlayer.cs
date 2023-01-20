@@ -5,7 +5,7 @@ using UnityEngine;
 public class cameraFollowingPlayer : MonoBehaviour
 {
     // Variables for the Camera 
-    public Transform player;
+    public Transform player; //position of the camera
     public float offsetOnX = 0f;
     public float offsetOnY = 5f;
 

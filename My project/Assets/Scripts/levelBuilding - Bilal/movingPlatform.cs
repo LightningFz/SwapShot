@@ -5,30 +5,30 @@ using UnityEngine;
 public class movingPlatform : MonoBehaviour
 {
 
-    public Transform posA, posB;
-    public int Speed;
+    public Transform startPosition, endPosition; //the start and end points of the moving platform
+    public int speed;
     public float timer;
-    Vector2 targetPos;
+    Vector2 targetPosition;
     // Start is called before the first frame update
     void Start()
     {
-        targetPos=posB.position; // sets the range of the platform 
+        targetPosition = endPosition.position; // sets the range of the platform 
     }
 
     // Update is called once per frame
     public void Update()
     {
-        if (Vector2.Distance(transform.position, posA.position) < .1f) Invoke("Action1", timer); // checks if the range of the platfrom is less than 1 is so it will start the timer for the platfrom to move 
-        if (Vector2.Distance(transform.position, posB.position) < .1f) Invoke("Action2", timer);
+        if (Vector2.Distance(transform.position, startPosition.position) < .1f) Invoke("Action1", timer); // checks if the range of the platfrom is less than 1 is so it will start the timer for the platfrom to move 
+        if (Vector2.Distance(transform.position, endPosition.position) < .1f) Invoke("Action2", timer);
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, Speed * Time.deltaTime); // will move the platfrom 
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime); // will move the platfrom 
     }
     public void Action1()
     {
-        targetPos = posB.position;
+        targetPosition = endPosition.position;
     }
     public void Action2()
     {
-        targetPos = posA.position;
+        targetPosition = startPosition.position;
     }
 }
