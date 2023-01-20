@@ -334,79 +334,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1364227702 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7120199846068951606, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-  m_PrefabInstance: {fileID: 3643946312179290385}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1364227705
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364227702}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!1 &1554111880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2982208947785755354, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-  m_PrefabInstance: {fileID: 3643946312179290385}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1554111882 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7914423064757456826, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
   m_PrefabInstance: {fileID: 3643946312179290385}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554111880}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccd7b7cb65e195f4d8b0031845875f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1554111884
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554111880}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!50 &1583389904 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3622746179333542656, guid: 8aeeb55704627044a8c82d4f2ae0cdec, type: 3}
@@ -758,10 +696,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 518230551092125578, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 75ecb2bb08d84c944819f4de8afbedc4, type: 3}
     - target: {fileID: 4605616415301681921, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -809,18 +743,6 @@ PrefabInstance:
     - target: {fileID: 7120199846068951606, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
       propertyPath: m_Name
       value: Fan
-      objectReference: {fileID: 0}
-    - target: {fileID: 7120199846068951606, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7914423064757456826, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-      propertyPath: fanOn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7914423064757456826, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
-      propertyPath: fanPower
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a9949adf76b094f86a2b604fd824c9, type: 3}
