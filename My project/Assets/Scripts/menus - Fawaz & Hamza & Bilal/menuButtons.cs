@@ -17,21 +17,21 @@ public class levelMenus : MonoBehaviour
         {
             if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
-                Resume();
+                resume();
             }
             else
             {
-                Pause();
+                pause();
             }
         }
     }
-    public void Resume()
+    public void resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
-    void Pause()
+    void pause()
     {
         if (endOfLevelMenuActive == false)
         {
@@ -46,20 +46,41 @@ public class levelMenus : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
-    public void HomeScreen()
+    public void homeScreen()
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
-    public void QuitGame()
+    public void quitGame()
     {
         Debug.Log("Quit game....");
         Application.Quit();
     }
-    public void Restart()
+    public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
         GameIsPaused = false;
+    }
+    public void changePetColor(petColor petColorScript)
+    {
+        if (petColorScript.changePetColor == false)
+        {
+            petColorScript.changePetColor = true;
+        }else if (petColorScript.changePetColor == false)
+        {
+            petColorScript.changePetColor = false;
+        }
+    }
+    public void changeBackgroundColor(backgroundColor backgroundColorScript)
+    {
+        if (backgroundColorScript.changeBackgroundColor == false)
+        {
+            backgroundColorScript.changeBackgroundColor = true;
+        }
+        else if (backgroundColorScript.changeBackgroundColor == false)
+        {
+            backgroundColorScript.changeBackgroundColor = false;
+        }
     }
 }

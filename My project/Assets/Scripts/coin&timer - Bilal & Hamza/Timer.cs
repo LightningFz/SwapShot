@@ -4,44 +4,25 @@ using TMPro;
 public class Timer : MonoBehaviour {
     //NOTE: This script needs some knowledge about unity and C# to be understood 
 
-    [SerializeField]
-    private float timerDuration = 3f * 60f; //Duration of the timer in seconds
+    
+    public bool countDown = true;
 
-    [SerializeField]
-    private bool countDown = true;
-
+    public float timerDuration = 3f * 60f; //Duration of the timer in seconds
     private float timer;
-    [SerializeField]
-    private TextMeshProUGUI firstMinute;
-    [SerializeField]
-    private TextMeshProUGUI secondMinute;
-    [SerializeField]
-    private TextMeshProUGUI separator;
-    [SerializeField]
-    private TextMeshProUGUI firstSecond;
-    [SerializeField]
-    private TextMeshProUGUI secondSecond;
 
-    //Use this for a single text object
-    //[SerializeField]
-    //private TextMeshProUGUI timerText;
-
+    public float flashDuration = 1f; //The full length of the flash
     private float flashTimer;
-    [SerializeField]
-    private float flashDuration = 1f; //The full length of the flash
 
+    //all the UI elements used to make up the timer 
+    public TextMeshProUGUI firstMinute;
+    public TextMeshProUGUI secondMinute;
+    public TextMeshProUGUI separator;
+    public TextMeshProUGUI firstSecond;
+    public TextMeshProUGUI secondSecond;
+
+    //This is called on the first frame 
     private void Start() {
         ResetTimer();
-    }
-
-    //resets timer every level
-    private void ResetTimer() {
-        if (countDown) {
-            timer = timerDuration;
-        } else {
-            timer = 0;
-        }
-        SetTextDisplay(true);
     }
 
     //checks if the time limit is over, if the time limit is over it starts flashing
@@ -56,6 +37,28 @@ public class Timer : MonoBehaviour {
             FlashTimer();
         }
     }
+    //resets timer every level
+    private void ResetTimer()
+    {
+        if (countDown)
+        {
+            timer = timerDuration;
+        }
+        else
+        {
+            timer = 0;
+        }
+        SetTextDisplay(true);
+    }
+    //display all the timer UI elements
+    private void SetTextDisplay(bool enabled)
+    {
+        firstMinute.enabled = enabled;
+        secondMinute.enabled = enabled;
+        separator.enabled = enabled;
+        firstSecond.enabled = enabled;
+        secondSecond.enabled = enabled;
+    }
 
     // updates the display
     private void UpdateTimerDisplay(float time) {
@@ -63,51 +66,34 @@ public class Timer : MonoBehaviour {
             time = 0;
         }
 
-        // the max time u can put for the timer
-        if (time > 3660) {
-            Debug.LogError("Timer cannot display values above 3660 seconds");
-            ErrorDisplay();
-            return;
-        }
-
         //this is for the display
         float minutes = Mathf.FloorToInt(time / 60);
         float seconds = Mathf.FloorToInt(time % 60);
 
+        //this is for updating each UI element of the timer
         string currentTime = string.Format("{00:00}{01:00}", minutes, seconds);
         firstMinute.text = currentTime[0].ToString();
         secondMinute.text = currentTime[1].ToString();
         firstSecond.text = currentTime[2].ToString();
         secondSecond.text = currentTime[3].ToString();
-
-        //Use this for a single text object
-        //timerText.text = currentTime.ToString();
-    }
-
-    private void ErrorDisplay() {
-        firstMinute.text = "8";
-        secondMinute.text = "8";
-        firstSecond.text = "8";
-        secondSecond.text = "8";
-
-
-        //Use this for a single text object
-        //timerText.text = "ERROR";
     }
 
     //this is what causes the flashing when the timer is over and also sets the speed of the flashing
     private void FlashTimer() {
-        if(countDown && timer != 0) {
+        //the timer came to an end by counting down
+        if (countDown && timer != 0) {
             timer = 0;
             UpdateTimerDisplay(timer);
         }
 
-        if(!countDown && timer != timerDuration) {
+        //the timer came to an end by counting up
+        if (!countDown && timer != timerDuration) {
             timer = timerDuration;
             UpdateTimerDisplay(timer);
         }
 
-        if(flashTimer <= 0) {
+        //switches on and off the UI elements of timer to create a flashing effect
+        if (flashTimer <= 0) {
             flashTimer = flashDuration;
         } else if (flashTimer <= flashDuration / 2) {
             flashTimer -= Time.deltaTime;
@@ -116,16 +102,5 @@ public class Timer : MonoBehaviour {
             flashTimer -= Time.deltaTime;
             SetTextDisplay(false);
         }
-    }
-
-    private void SetTextDisplay(bool enabled) {
-        firstMinute.enabled = enabled;
-        secondMinute.enabled = enabled;
-        separator.enabled = enabled;
-        firstSecond.enabled = enabled;
-        secondSecond.enabled = enabled;
-
-        //Use this for a single text object
-        //timerText.enabled = enabled;
     }
 }
