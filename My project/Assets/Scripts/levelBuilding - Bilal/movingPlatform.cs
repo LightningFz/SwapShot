@@ -20,12 +20,12 @@ public class movingPlatform : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (Vector2.Distance(transform.position, startPosition.position) < .1f) Invoke("Action1", timer); // checks if the range of the platfrom is less than 1 is so it will start the timer for the platfrom to move 
+        if (Vector2.Distance(transform.position, startPosition.position) < .1f) Invoke("Action1", timer); // checks if the range of the platfrom is less than 1 is so it will start the timer for the action methods 
         if (Vector2.Distance(transform.position, endPosition.position) < .1f) Invoke("Action2", timer);
 
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime); // will move the platfrom 
     }
-    public void Action1()
+    public void Action1()// these methods set the new target that the platform moves towards
     {
         targetPosition = endPosition.position;
     }
