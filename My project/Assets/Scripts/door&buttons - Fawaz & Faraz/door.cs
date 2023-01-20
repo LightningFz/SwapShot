@@ -8,7 +8,7 @@ public class door : MonoBehaviour
     public bool doorClosed;
     public bool moveDoor = false;
     public Transform Door; // refrences the transform component from the game object door
-    public Vector3 doorScale;
+    public Vector3 doorScale; // The scale that controls the door's size will be in responsible of opening and closing the door.
 
     // Start is called before the first frame update
     void Start()

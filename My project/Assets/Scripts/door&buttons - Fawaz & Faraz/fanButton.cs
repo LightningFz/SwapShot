@@ -6,7 +6,7 @@ public class fanButton : MonoBehaviour
 {
 
     // vairables
-    public fan fn; //refrences the fan script
+    public fan fan; //refrences the fan script
 
     // this method is called when a game object collides with the trigger area 
     void OnTriggerEnter2D(Collider2D gameObjects) //paramater that refers to the object that collides with the trigger, in this situation the objects can be either the player or the box
@@ -21,13 +21,13 @@ public class fanButton : MonoBehaviour
     void Switch()
     {
         // when the switch method is called, this checks if the fanOn vairable is true or false, if its false it switches it to true and vice versa
-        if (fn.fanOn == false)
+        if (fan.fanOn == false)
         {
-            fn.fanOn = true;
+            fan.fanOn = true;
         }
-        else if (fn.fanOn == true)
+        else if (fan.fanOn == true)
         {
-            fn.fanOn = false;
+            fan.fanOn = false;
         }
     }
     

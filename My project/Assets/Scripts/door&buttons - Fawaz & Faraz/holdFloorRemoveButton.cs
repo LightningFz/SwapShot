@@ -5,7 +5,7 @@ using UnityEngine;
 public class holdFloorRemoveButton : MonoBehaviour
 {
     // vairables
-    public GameObject floor; // references the door script
+    public GameObject floor; // references the door gameObject
 
     // Start is called before the first frame update
     void Start()
