@@ -697,7 +697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204621772882917351, guid: d0c87dfa5bd4e4c43b7ab1d30bbf35ec, type: 3}
       propertyPath: m_Name
-      value: venom  (1)
+      value: poison 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c87dfa5bd4e4c43b7ab1d30bbf35ec, type: 3}
@@ -2558,7 +2558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204621772882917351, guid: d0c87dfa5bd4e4c43b7ab1d30bbf35ec, type: 3}
       propertyPath: m_Name
-      value: 'venom '
+      value: poison
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c87dfa5bd4e4c43b7ab1d30bbf35ec, type: 3}

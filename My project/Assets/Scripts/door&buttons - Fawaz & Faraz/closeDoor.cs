@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this script is made for a game object thats used as a button
+    when a box or a player step on a button it calls the close door class in the door script
+*/
 public class closeDoor : MonoBehaviour
 {
     // vairables
@@ -21,6 +25,7 @@ public class closeDoor : MonoBehaviour
             if (door.doorClosed == false)
             {
                 door.moveDoor = true;
+                
             }
         }
     }

@@ -4,6 +4,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ this class checks if the player is in contact with a coin, 
+ if the player is in contact it plays the pick up noise, 
+ as well as increasing the number of coins using the coin counter script, 
+ this class also destroys the game object to act as the "pick up" 
+*/
 public class CoinPickUp : MonoBehaviour
 {
     public AudioClip coinCollect; // the sound effect for the coin pickup 

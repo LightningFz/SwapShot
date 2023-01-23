@@ -3,6 +3,13 @@
 using UnityEngine;
 using TMPro;
 
+/*
+  this class is used to set up a timer for the game, 
+  its made to count up to a certian number or vice versa, 
+  when the timer hits the number that is picked by the dev, 
+  it starts flashing to let the player know that they ran out of time, 
+  this class also prints out the time on the screen
+*/ 
 public class Timer : MonoBehaviour {
     //NOTE: This script needs some knowledge about unity and C# to be understood 
 

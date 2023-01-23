@@ -18,7 +18,7 @@ public class openDoor : MonoBehaviour
         {
 
             // checks if the door closed vairable from the door script is false, if false it sets the move door vairable to true
-            if (door.doorClosed == false)
+            if (door.doorClosed == true)
             {
                 door.moveDoor = true;
             }

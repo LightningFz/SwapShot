@@ -4,6 +4,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+    this script is used to open or close the door
+    the method openDoor and closeDoor are run whenever the boolean doorClosed is changed from true to false or vice versa
+    this script is connected to all the scripts that are labled closeDoor, closeOpenDoor, holdOpenDoor, and openDoor
+    which change the boolean doorClose depending on the script in question.
+*/ 
 public class door : MonoBehaviour
 {
     // vairables

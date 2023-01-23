@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Void : MonoBehaviour
+public class deathZone : MonoBehaviour
 {
     //called when a collision is triggered 
     public void OnTriggerEnter2D(Collider2D collision) // makes a colldider 

@@ -21,7 +21,7 @@ public class levelMenus : MonoBehaviour
         //check for any inputs from the player
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("fgh");
+            
             if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
                 resumeGame();
