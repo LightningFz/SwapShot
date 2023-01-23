@@ -28,7 +28,7 @@ public class petFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.canShootPet == false || player.petInPlace == false) //check if it should go back to it's resting position or not
+        if (player.canShootPet == false || player.petInPlace == false) 
         {
             follow();
         }

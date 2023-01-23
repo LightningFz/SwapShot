@@ -1522,7 +1522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577590821, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 772304543, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1534,7 +1534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 772304543, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1108770549, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1546,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1108770549, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1403003107, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1558,7 +1558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1403003107, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1956521912523686090, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1570,7 +1570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1956521912523686090, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1970499266518705343, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1598,7 +1598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574301133481435205, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4574301133741132414, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1610,7 +1610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574301133741132414, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4574301134449132506, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1622,7 +1622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574301134449132506, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: menuButtons, Assembly-CSharp
+      value: pauseMenuButtons, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4574301134496249540, guid: 07984489fe635424a9649af8476e7717, type: 3}
       propertyPath: m_Name

@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour {
     public bool countDown = true;
 
     public float timerDuration = 3f * 60f; //Duration of the timer in seconds
-    private float timer;
+    public float timer;
 
     public float flashDuration = 1f; //The full length of the flash
     private float flashTimer;

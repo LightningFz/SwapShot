@@ -15,11 +15,10 @@ public class pauseMenuButtons : MonoBehaviour
     //variables that can be accessed from anywhere in the game
     public static bool GameIsPaused = false;
     public static bool endOfLevelMenuActive = false;
-    public GameObject pauseMenuUI; 
 
     //the gameobject of the pause menu
-    //public GameObject pauseMenuUI;
-    /*
+    public GameObject pauseMenuUI;
+    
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +36,6 @@ public class pauseMenuButtons : MonoBehaviour
             }
         }
     }
-    */
     //resume the game when called
     public void resumeGame()
     {
