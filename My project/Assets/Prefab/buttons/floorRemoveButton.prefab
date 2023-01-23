@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2919526390335530946}
   - component: {fileID: 2919526390335530947}
   m_Layer: 0
-  m_Name: button
+  m_Name: floorRemoveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
