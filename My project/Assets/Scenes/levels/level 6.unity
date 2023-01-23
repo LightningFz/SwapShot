@@ -468,9 +468,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1929590545}
     - target: {fileID: 2900734906388440351, guid: 05538361a80300448a7bcc98d91c2622, type: 3}
-      propertyPath: newPetRange
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: powerUpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 12a558c8452ea55459e4c4c90d3707a9, type: 3}
     - target: {fileID: 5929239787023144094, guid: 05538361a80300448a7bcc98d91c2622, type: 3}
       propertyPath: m_Name
       value: petRange

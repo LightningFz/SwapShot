@@ -1398,6 +1398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fasterPet
       objectReference: {fileID: 0}
+    - target: {fileID: 8108875277509158617, guid: 392147f0b7a32744abe43985703a9ada, type: 3}
+      propertyPath: pet
+      value: 
+      objectReference: {fileID: 901894921}
     - target: {fileID: 8108875277509158620, guid: 392147f0b7a32744abe43985703a9ada, type: 3}
       propertyPath: m_RootOrder
       value: 1
