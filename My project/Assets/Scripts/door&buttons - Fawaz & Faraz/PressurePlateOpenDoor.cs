@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class holdOpenDoor : MonoBehaviour
+public class PressurePlateOpenDoor : MonoBehaviour
 {
    // vairables
     public door door; // references the door script

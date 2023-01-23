@@ -7,7 +7,7 @@ using UnityEngine;
 public class fasterPet : MonoBehaviour
 {
     // vairables 
-    public followPlayer pet;
+    public petFollowPlayer pet;
     public AudioClip powerUpSound;
 
     // this method is called when a game object collides with the trigger area 

@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class openDoor : MonoBehaviour
+public class openDoorButton : MonoBehaviour
 {
     // vairables
     public door door; // references the door script

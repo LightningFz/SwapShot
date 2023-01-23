@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class holdFloorRemoveButton : MonoBehaviour
+public class pressurePlateRemoveFloor : MonoBehaviour
 {
     // vairables
     public GameObject floor; // references the door gameObject

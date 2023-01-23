@@ -8,7 +8,7 @@ public class petShooting : MonoBehaviour
 {
 
     //variables
-    public followPlayer petScript;
+    public petFollowPlayer petScript;
     public Rigidbody2D petRigidbody;
     public AudioClip petShootSound;
     public Transform petRotation;

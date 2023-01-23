@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fanButton : MonoBehaviour
+public class toggleableFanButton : MonoBehaviour
 {
 
     // vairables

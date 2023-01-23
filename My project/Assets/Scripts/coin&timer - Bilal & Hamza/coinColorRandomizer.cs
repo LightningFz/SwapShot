@@ -8,7 +8,7 @@ using UnityEngine;
  the purpose of this class is to change the color of the game object coin on every level.
  you are able to disable this feature through the inspector
 */
-public class coinColorChanger : MonoBehaviour
+public class coinColorRandomizer : MonoBehaviour
 {   
     //variables
     public SpriteRenderer coin; //this vairable accesses the sprite of the coin

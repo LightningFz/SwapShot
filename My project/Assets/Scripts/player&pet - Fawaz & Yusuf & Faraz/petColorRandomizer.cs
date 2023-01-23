@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class petColor : MonoBehaviour
+public class petColorRandomizer : MonoBehaviour
 {
     public SpriteRenderer petImage;
     public Color[] color;

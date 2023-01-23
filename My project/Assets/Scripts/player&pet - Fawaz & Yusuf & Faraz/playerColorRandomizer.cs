@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerColor : MonoBehaviour
+public class playerColorRandomizer : MonoBehaviour
 {
     //variables
     public SpriteRenderer player;

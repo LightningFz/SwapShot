@@ -8,7 +8,7 @@ using UnityEngine;
     this script is made for a game object thats used as a button
     when a box or a player step on a button it calls the close door class in the door script
 */
-public class closeDoor : MonoBehaviour
+public class closeDoorButton : MonoBehaviour
 {
     // vairables
     public door door; // references the door script

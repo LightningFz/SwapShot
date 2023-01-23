@@ -13,10 +13,10 @@ using TMPro;
 */ 
 public class CoinCounter : MonoBehaviour
 {
-    public static CoinCounter Instance;// This class was turned into a variable that could be accessed from any where in the game.
+    public static CoinCounter Instance; // This class was turned into a variable that could be accessed from any where in the game.
 
-    public TMP_Text coinText;// the UI element used to display the number of coins
-    public int currentCoins = 0;
+    public TMP_Text coinText; // the UI element used to display the number of coins
+    public int currentNumberOfCoinsCollected = 0; // the integer that holds the number of coins currently collected
 
     //this is called before the game starts
     public void Awake()
@@ -27,13 +27,16 @@ public class CoinCounter : MonoBehaviour
     //this is called on the first frame
     public void start()
     {
-        coinText.text = "Coins: " + currentCoins.ToString(); // adds the text "coin" 
+        coinText.text = "Coins: " + currentNumberOfCoinsCollected.ToString(); // adds the text "Coins: " on the screen
     }
 
-    //This method takes an integer parameter and increases the coin counter by the integer parameter.
+    /*
+        This method takes an integer parameter and increases the coin counter by the integer parameter.
+        this method also updates the text on the screen
+    */
     public void IncreaseCoins(int v)
     {
-        currentCoins += v;
-        coinText.text = "Coins: " + currentCoins.ToString(); //update the amount of coins 
+        currentNumberOfCoinsCollected += v;
+        coinText.text = "Coins: " + currentNumberOfCoinsCollected.ToString(); //update the amount of coins listed on the screen
     }
 }
