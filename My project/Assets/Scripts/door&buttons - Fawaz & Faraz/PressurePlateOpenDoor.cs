@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this script is used for a pressure plate that opens the door when its held down
+    the door is closed when the player or box is moved off of the pressure plate
+*/
 public class PressurePlateOpenDoor : MonoBehaviour
 {
    // vairables

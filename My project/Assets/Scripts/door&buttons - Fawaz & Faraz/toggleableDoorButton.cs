@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-    this script is made for a game object thats used as a button, when a box or a player step on a button it class the open or close door function depending on the doors current position 
+    this script is made for a game object thats used as a button, 
+    when a box or a player step on a button it class the open or close door function depending on the doors current position 
 */ 
 public class toggleableDoorButton : MonoBehaviour
 {
