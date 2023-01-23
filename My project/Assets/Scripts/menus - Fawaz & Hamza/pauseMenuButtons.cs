@@ -5,30 +5,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class menuButtons : MonoBehaviour
+/*
+    this class is used to make the pause menu in the game
+    when you press escape in the game it will pop up the pause menu
+ */
+public class pauseMenuButtons : MonoBehaviour
 {
 
     //variables that can be accessed from anywhere in the game
     public static bool GameIsPaused = false;
     public static bool endOfLevelMenuActive = false;
+    public GameObject pauseMenuUI; 
 
     //the gameobject of the pause menu
-    public GameObject pauseMenuUI;
-
+    //public GameObject pauseMenuUI;
+    /*
     // Update is called once per frame
     void Update()
     {
-        getInput();
-    }
-    //check for any inputs from the player 
-    void getInput()
-    {
+        //check for any inputs from the player
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("fgh");
+            
             if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
-                resumeGame(); 
+                resumeGame();
             }
             else
             {
@@ -36,6 +37,7 @@ public class menuButtons : MonoBehaviour
             }
         }
     }
+    */
     //resume the game when called
     public void resumeGame()
     {
@@ -53,13 +55,7 @@ public class menuButtons : MonoBehaviour
             GameIsPaused = true;
         }
     }
-    //reload the current level
-    public void restartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
+
     //load the next level when called
     public void loadNextLevel()
     {
@@ -79,5 +75,12 @@ public class menuButtons : MonoBehaviour
         Debug.Log("Quit game....");
         Application.Quit();
     }
-
+    //reload the current level
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+  
 }

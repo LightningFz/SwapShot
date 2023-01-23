@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class is used to make a hovering effect for game objects
+    you can set the hover effect at a certian range 
+ */
 public class hoverEffect : MonoBehaviour
 {
     public float amplitude = 0.5f; //how much the object goes up and down

@@ -5,6 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+    this class is used to create the portal to the next level,
+    this class also checks if the portal should be on or off
+ */
 public class endOfLevel : MonoBehaviour
 {
 
@@ -25,8 +29,8 @@ public class endOfLevel : MonoBehaviour
             //pause the game
             endOflevelMenu.SetActive(true);
             Time.timeScale = 0f;
-            levelMenus.GameIsPaused = true;
-            levelMenus.endOfLevelMenuActive = true;
+            menuButtons.GameIsPaused = true;
+            menuButtons.endOfLevelMenuActive = true;
         }
     }
     //called evey frame, checks if on or off to change the color of the portal and to also activate the hover effect

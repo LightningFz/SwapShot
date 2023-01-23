@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class allows the pet to follow the player
+    the dev can pick how fast the pet follows the player as well as where he stops in comparison to the player position
+ */
 public class petFollowPlayer : MonoBehaviour
 {
 

@@ -1671,6 +1671,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597408792, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 27021409}
     - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: separator
       value: 
@@ -1739,10 +1743,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: gameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6815062224620694563, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 27021409}
     - target: {fileID: 6815062225006894020, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: pauseMenuUI
       value: 
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1704575721}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af865275fb45fe1418356e2e127bfb44, type: 3}
   m_Name: 

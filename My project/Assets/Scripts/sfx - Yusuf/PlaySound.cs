@@ -11,7 +11,7 @@ public class playSound : MonoBehaviour
     public AudioSource petShoot;
     public AudioSource audioSource;
     public AudioSource pauseSound;
-    public movement _isJumping;
-    public movement isGrounded;
+    public playerMovement _isJumping;
+    public playerMovement isGrounded;
     
 } 

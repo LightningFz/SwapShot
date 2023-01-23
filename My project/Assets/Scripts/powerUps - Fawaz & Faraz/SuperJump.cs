@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class is made for a power-up that makes the player jump higher
+    when the player picks up the game object it changes the jump value to 800
+ */
 public class superJump : MonoBehaviour
 {
     public AudioClip powerUpSound;
@@ -19,12 +23,12 @@ public class superJump : MonoBehaviour
     // this method changes the jump power of the player to 800
     void Pickup(Collider2D player)
     {
-        AudioSource.PlayClipAtPoint(powerUpSound,transform.position);
+        AudioSource.PlayClipAtPoint(powerUpSound, transform.position);
         // this referring to the movement script of the player
-        movement playerJump = player.GetComponent<movement>();
+        playerMovement playerJump = player.GetComponent<playerMovement>();
 
         // this sets the jump power viarable in the movement script to 800
-        playerJump.jumpPower = 800f;
+        playerJump.jumpPower = 800;
 
         // this removes the powerup game object from the scene
         Destroy(gameObject);

@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class is made to change the background color of the level
+ */
 public class backgroundColorRandomizer : MonoBehaviour
 {
 

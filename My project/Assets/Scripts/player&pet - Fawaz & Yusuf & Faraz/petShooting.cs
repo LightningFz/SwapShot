@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class controls the pet being shot
+    this class controls the direction in which the pet goes,
+    this class controls the range, and checks to see if the pet is in place before shooting
+ */
 public class petShooting : MonoBehaviour
 {
 

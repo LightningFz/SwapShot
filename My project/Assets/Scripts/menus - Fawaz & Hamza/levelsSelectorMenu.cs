@@ -6,7 +6,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class levels : MonoBehaviour
+/*
+    this class controls the buttons in the levels page and takes you to the level that you picked
+ */
+public class levelsSelectorMenu : MonoBehaviour
 {
 
     //array of all the levels

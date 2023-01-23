@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class controls the pet speed power-up
+    when the player picks up this power-up the pet can go faster when being shot
+ */
 public class fasterPet : MonoBehaviour
 {
     // vairables 

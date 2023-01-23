@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class controls the pet range power-up
+    when the player picks up this power-up the pet can go further when being shot
+ */
 public class petRange : MonoBehaviour
 {
     

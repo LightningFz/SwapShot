@@ -4,7 +4,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+/*
+    this class controls the player movement
+    it controls the jump power, speed, max amount of jumps
+    as well as making sure there arent any bugs with the player
+ */
+public class playerMovement : MonoBehaviour
 {
 
 

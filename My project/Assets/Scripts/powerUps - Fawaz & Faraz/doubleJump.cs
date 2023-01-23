@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class makes the power-up for the player that allows the player to double jump
+    when the player picks up the power up it allows the player to jump a second time
+ */
 public class doubleJump : MonoBehaviour
 {
     public AudioClip powerUpSound;
@@ -22,7 +26,7 @@ public class doubleJump : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(powerUpSound,transform.position);
         // this referring to the movement script of the player
-        movement playerJump = player.GetComponent<movement>(); 
+        playerMovement playerJump = player.GetComponent<playerMovement>(); 
 
         // this sets the max jumps viarable in the movement script to 2 instead of 1
         playerJump.maxJumps = 2;

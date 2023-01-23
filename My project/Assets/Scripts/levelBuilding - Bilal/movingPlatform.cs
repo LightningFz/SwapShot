@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class is used to create a moving platform
+    the platform moves from one position to another that is set by the dev
+    this platform can go horizontally and vertically 
+ */
 public class movingPlatform : MonoBehaviour
 {
 

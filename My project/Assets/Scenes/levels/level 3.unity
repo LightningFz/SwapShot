@@ -330,6 +330,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbd0a54f140dbb243bbe2231b1e26243, type: 3}
+--- !u!1 &198196960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2036515034412585164, guid: 4defffb2fb58a804a95578bdf34aae90, type: 3}
+  m_PrefabInstance: {fileID: 719660060584858955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &198196961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198196960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46947267fc7885343ac2452727cc361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpSound: {fileID: 8300000, guid: 12a558c8452ea55459e4c4c90d3707a9, type: 3}
 --- !u!1001 &387465983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,6 +1289,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597408792, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 597408792, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 27021409}
     - target: {fileID: 48224813987847264, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: separator
       value: 
@@ -1347,6 +1373,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 27021409}
+    - target: {fileID: 6815062225006894020, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6815062225006894020, guid: f2337a13bfd41e749846afce65382e5b, type: 3}
       propertyPath: pauseMenuUI
       value: 
@@ -1806,5 +1836,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Super Jump
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6550163748497227215, guid: 4defffb2fb58a804a95578bdf34aae90, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4defffb2fb58a804a95578bdf34aae90, type: 3}

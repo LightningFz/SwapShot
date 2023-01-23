@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+    this class controls all the buttons and all the designs of the start menu
+ */
 public class startMenu : MonoBehaviour
 {
 

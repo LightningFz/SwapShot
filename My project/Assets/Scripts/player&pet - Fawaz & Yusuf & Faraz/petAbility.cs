@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class controls the collison of the player as well as the range and the teleporting of the pet with the box
+ */
 public class petAbility : MonoBehaviour
 {
     

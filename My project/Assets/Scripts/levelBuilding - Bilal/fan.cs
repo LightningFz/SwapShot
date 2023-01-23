@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class is used to control the fan
+    this is used to make the velocity and push the player a certian way
+ */
 public class fan : MonoBehaviour
 {   
     // variables 

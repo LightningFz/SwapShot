@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class levelMenus : MonoBehaviour
+/*
+    this controls the buttons in all the menus
+ */
+public class menuButtons : MonoBehaviour
 {
 
     //variables that can be accessed from anywhere in the game
@@ -18,13 +21,17 @@ public class levelMenus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //check for any inputs from the player
+        getInput();
+    }
+    //check for any inputs from the player 
+    void getInput()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
+            Debug.Log("fgh");
             if (GameIsPaused == true && endOfLevelMenuActive == false)
             {
-                resumeGame();
+                resumeGame(); 
             }
             else
             {
@@ -49,7 +56,14 @@ public class levelMenus : MonoBehaviour
             GameIsPaused = true;
         }
     }
-
+    /*
+    //reload the current level
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
     //load the next level when called
     public void loadNextLevel()
     {
@@ -69,12 +83,5 @@ public class levelMenus : MonoBehaviour
         Debug.Log("Quit game....");
         Application.Quit();
     }
-    //reload the current level
-    public void restartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-  
+    */
 }

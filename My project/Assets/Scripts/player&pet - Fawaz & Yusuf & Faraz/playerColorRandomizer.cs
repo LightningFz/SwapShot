@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this class randomizes the player color
+    this class also allows the player to turn off the randomization
+ */
 public class playerColorRandomizer : MonoBehaviour
 {
     //variables
