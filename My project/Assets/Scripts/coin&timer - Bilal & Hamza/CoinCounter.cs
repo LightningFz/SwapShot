@@ -6,6 +6,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro; 
 
+/*
+  this class is used to show the amount of coins collected in each level, 
+  it uses a counter that increases everytime the player gets in contact with a coin, 
+  this class also prints the message on the screen that shows the amount of coins currently collected
+*/ 
 public class CoinCounter : MonoBehaviour
 {
     public static CoinCounter Instance;// This class was turned into a variable that could be accessed from any where in the game.

@@ -1423,11 +1423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5090752700267449568, guid: 3156f7c9c6f6f2148b357982a75fc797, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -71.62
+      value: -71.37
       objectReference: {fileID: 0}
     - target: {fileID: 5090752700267449568, guid: 3156f7c9c6f6f2148b357982a75fc797, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.58
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 5090752700267449568, guid: 3156f7c9c6f6f2148b357982a75fc797, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1461,10 +1461,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5090752700267449569, guid: 3156f7c9c6f6f2148b357982a75fc797, type: 3}
-      propertyPath: powerUpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 12a558c8452ea55459e4c4c90d3707a9, type: 3}
     - target: {fileID: 5090752700267449572, guid: 3156f7c9c6f6f2148b357982a75fc797, type: 3}
       propertyPath: m_Name
       value: doubleJump

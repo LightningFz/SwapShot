@@ -8,7 +8,7 @@ public class backgroundColor : MonoBehaviour
 {
 
     //variables
-    public Camera camera;
+    public new Camera camera;
     public Color[] color;//array
     public Color defaultColor;
     public bool changeBackgroundColor;

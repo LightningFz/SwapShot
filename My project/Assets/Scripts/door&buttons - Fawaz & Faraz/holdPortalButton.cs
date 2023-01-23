@@ -9,7 +9,7 @@ public class holdPortalButton : MonoBehaviour
 
     // vairables
     public endOfLevel portal; // the script of the portal
-    public SpriteRenderer button; //the spriet of the button
+    public SpriteRenderer button; //the sprite of the button
     public AudioClip portalButtonPress; //this is a sound effect
     public Color on;  //color for the button when turned on
     public Color off; //color for the button when turned off
