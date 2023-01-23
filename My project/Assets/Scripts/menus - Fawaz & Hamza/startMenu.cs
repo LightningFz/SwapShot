@@ -30,7 +30,7 @@ public class startMenu : MonoBehaviour
         SceneManager.LoadScene(numberOfLevels + 2);
     }
     //load credits menu
-    public void loaCreditsMenu()
+    public void loadCreditsMenu()
     {
         SceneManager.LoadScene(numberOfLevels + 3);
     }

@@ -18,6 +18,7 @@ public class pressurePlateOpenPortal : MonoBehaviour
     public Color on;  //color for the button when turned on
     public Color off; //color for the button when turned off
     public bool isButtonOn = false;
+
     private void Start()
     {
         if (isButtonOn == false) //checks if the bool "isButtonOn" is false to run the code below 
@@ -40,7 +41,7 @@ public class pressurePlateOpenPortal : MonoBehaviour
         if (collision.CompareTag("Player") || collision.CompareTag("pet box") || collision.CompareTag("box")) //the collider will check if a player or a pet or a box to exit it 
         {
             AudioSource.PlayClipAtPoint(portalButtonPress,transform.position); // Sound effect will play at that the position of the button 
-            isButtonOn = false; // will turn the bool to true
+            isButtonOn = false; // will turn the bool to false
             portal.portalOn = false;
             button.color = off; // will turn off the button color to 
         }
