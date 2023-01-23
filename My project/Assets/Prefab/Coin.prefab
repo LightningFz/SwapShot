@@ -154,4 +154,4 @@ MonoBehaviour:
   - {r: 0.9245283, g: 0.67932, b: 0, a: 1}
   - {r: 0.8039216, g: 0.73937225, b: 0, a: 1}
   defaultColor: {r: 1, g: 0.7137255, b: 0, a: 1}
-  changePlayerColor: 1
+  changeCoinColor: 1
