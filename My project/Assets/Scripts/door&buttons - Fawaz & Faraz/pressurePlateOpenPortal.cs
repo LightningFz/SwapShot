@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this script is used for a pressure plate that opens the portal when its held down
+    the portal is closed when the player or box is moved off of the pressure plate
+*/
 public class pressurePlateOpenPortal : MonoBehaviour
 {
 

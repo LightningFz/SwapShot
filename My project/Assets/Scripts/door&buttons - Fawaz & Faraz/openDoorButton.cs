@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    this script is made for a game object button
+    it's used to open the door if its closed
+    this button is unable to close the door if stepped on again
+*/
 public class openDoorButton : MonoBehaviour
 {
     // vairables

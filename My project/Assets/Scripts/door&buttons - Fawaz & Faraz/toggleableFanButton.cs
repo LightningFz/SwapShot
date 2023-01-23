@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+   this script is used for a button that is toggleable,
+   when the button is pressed the fan turns on and pushes anything in its way
+   when the button is pressed again the fan turns off
+*/
 public class toggleableFanButton : MonoBehaviour
 {
 
