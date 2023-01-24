@@ -13,7 +13,10 @@ using TMPro;
  */
 public class playerNameToTextFile : MonoBehaviour
 {
+    //This variable refers to the UI element that takes the player input.
     public InputField InputField;
+
+    //This is a global variable that can be accessed from any script, it stores the name of the current player.
     public static string currentPlayerPlaying;
 
     //on the start of the game this medthod will create an empty directory that will save all the text files
@@ -22,11 +25,6 @@ public class playerNameToTextFile : MonoBehaviour
         //create a folder
         Directory.CreateDirectory(Application.streamingAssetsPath + "/textFiles/");
     }
-    private void Update()
-    {
-        Debug.Log(currentPlayerPlaying);
-    }
-
     //this medthod creates text files that has the list of players that have their score/progress saved in the game
     public void createTextFile()
     {
