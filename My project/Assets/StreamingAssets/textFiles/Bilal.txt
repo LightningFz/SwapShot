@@ -1,0 +1,11 @@
+Player name: Bilal
+level 1: 47.25201
+level 1: 50.15536
+level 2: 23.29284
+level 3: 39.75961
+level 4: 24.58724
+level 5: 21.89273
+level 6: 0
+level 7: 5.339492
+level 8: 14.00105
+level 9: 9.97213
