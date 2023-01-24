@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 48224813987847264}
   - component: {fileID: 6815062225006894020}
   - component: {fileID: 597408792}
+  - component: {fileID: 597408793}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -63,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDown: 0
   timerDuration: 180
+  timer: 0
   flashDuration: 1
   firstMinute: {fileID: 0}
   secondMinute: {fileID: 0}
@@ -95,3 +97,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
+--- !u!114 &597408793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815062224620694562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94761f21d8e96d4caae1ea9a6dca8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfCoins: {fileID: 7368786260478831921}
+  time: {fileID: 48224813987847264}

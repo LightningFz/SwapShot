@@ -14,13 +14,17 @@ using TMPro;
 public class playerNameToTextFile : MonoBehaviour
 {
     public InputField InputField;
-    public string currentPlayerPlaying;
+    public static string currentPlayerPlaying;
 
     //on the start of the game this medthod will create an empty directory that will save all the text files
     void Start()
     {
         //create a folder
         Directory.CreateDirectory(Application.streamingAssetsPath + "/textFiles/");
+    }
+    private void Update()
+    {
+        Debug.Log(currentPlayerPlaying);
     }
 
     //this medthod creates text files that has the list of players that have their score/progress saved in the game
@@ -52,7 +56,7 @@ public class playerNameToTextFile : MonoBehaviour
         //check to make sure that this player doesn't have a text file already
         if (!File.Exists(currentPlayerName))
         {
-            File.WriteAllText(currentPlayerName, "Player name: " + InputField.text);
+            File.WriteAllText(currentPlayerName, "Player name: " + InputField.text + "\n");
         }
         
         //any text that is still in the input field will be sent to the log
