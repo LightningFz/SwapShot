@@ -34,6 +34,12 @@ public class startMenu : MonoBehaviour
     {
         SceneManager.LoadScene(numberOfLevels + 3);
     }
+    //reload the current level
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+    }
     //quit the game
     public void quitGame()
     {
