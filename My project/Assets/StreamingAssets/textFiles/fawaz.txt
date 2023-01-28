@@ -1,2 +1,10 @@
 Player name: fawaz
-level 4: 21.22458
+level 1: 36.18665
+level 2: 25.60978
+level 3: 36.20071
+level 4: 23.88394
+level 5: 15.6496
+level 6: 12.8808
+level 7: 3.334492
+level 8: 9.31895
+level 9: 4.82093
