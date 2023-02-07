@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/levelList.unity
     guid: e11040936e25ede4cb2313267691fea0
   - enabled: 0
-    path: Assets/Scenes/customizationMenu.unity
+    path: Assets/Scenes/Background chooser.unity
     guid: 95c8649eaf1897e489ab4a5b2a7b3aa7
   - enabled: 0
     path: Assets/Scenes/creditsMenu.unity
